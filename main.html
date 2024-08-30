@@ -56,12 +56,14 @@
         }
         .container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
+            background-color: #222;
         }
         .logo {
             font-size: 2.5em;
+            color: #fff;
         }
         .social-icons {
             display: flex;
@@ -76,11 +78,15 @@
         }
         .content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
-            gap: 40px;
+            gap: 20px;
         }
         .links, .services, .other-services, .contact {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -88,6 +94,14 @@
         h3 {
             font-weight: bold;
             font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         footer {
             display: flex;
@@ -95,12 +109,20 @@
             align-items: center;
             padding: 20px;
             background-color: #111;
+            color: #aaa;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header class="container">
-        <h1 class="logo">company</h1>
+        <h1 class="logo">Company</h1>
         <div class="social-icons">
             <a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon-png-16.png" alt="Facebook"></a>
             <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-512/twitter-logo-1-225997.png" alt="Twitter"></a>
@@ -125,7 +147,7 @@
             <a href="#">Banner Design</a>
         </div>
         <div class="other-services">
-            <h3>Other services</h3>
+            <h3>Other Services</h3>
             <a href="#">SEO</a>
             <a href="#">Content Marketing</a>
             <a href="#">Prints</a>
@@ -134,13 +156,12 @@
         <div class="contact">
             <h3>Contact</h3>
             <p>+91 8879887262</p>
-            <p>+91 8879887262</p>
             <p>contact@company.com</p>
         </div>
     </main>
     <footer>
-        <p>Copyright © 2021 company.</p>
-        <a href="#">Privacy policy</a>
+        <p>Copyright © 2024 Company.</p>
+        <a href="#">Privacy Policy</a>
     </footer>
 </body>
 </html>
