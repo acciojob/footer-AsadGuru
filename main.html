@@ -45,158 +45,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Footer</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-
-	<style>
-		/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Footer Container */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Footer Section */
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-}
-
-.footer-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-.social-media {
-    display: flex;
-}
-
-.media-icon {
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-    margin-right: 10px;
-    display: block;
-}
-
-.facebook {
-    background-image: url('facebook-icon.png'); /* Replace with your Facebook icon URL */
-}
-
-.twitter {
-    background-image: url('twitter-icon.png'); /* Replace with your Twitter icon URL */
-}
-
-.instagram {
-    background-image: url('instagram-icon.png'); /* Replace with your Instagram icon URL */
-}
-
-.linkedin {
-    background-image: url('linkedin-icon.png'); /* Replace with your LinkedIn icon URL */
-}
-
-.youtube {
-    background-image: url('youtube-icon.png'); /* Replace with your YouTube icon URL */
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-	</style>
+    <title>Company Website</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 2.5em;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 40px;
+        }
+        .links, .services, .other-services, .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+    </style>
 </head>
 <body>
-    <footer>
-        <div class="footer-container">
-            <!-- Home Section -->
-            <div class="footer-section">
-                <h2>Home</h2>
-                <ul>
-                    <li><a href="/">Homepage</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/services">Our Services</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- About Section -->
-            <div class="footer-section">
-                <h2>About</h2>
-                <p>Learn more about our company, our mission, and our team.</p>
-                <a href="/about">Read More</a>
-            </div>
-
-            <!-- Links Section -->
-            <div class="footer-section">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="/">Homepage</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Services Section -->
-            <div class="footer-section">
-                <h2>Services</h2>
-                <ul>
-                    <li><a href="/service1">Service 1</a></li>
-                    <li><a href="/service2">Service 2</a></li>
-                    <li><a href="/service3">Service 3</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h2>Contact</h2>
-                <p>Contact us at: <a href="tel:8879887262">887-988-7262</a></p>
-                <p>Follow us:</p>
-                <div class="social-media">
-                    <a href="https://facebook.com" class="media-icon facebook" aria-label="Facebook"></a>
-                    <a href="https://twitter.com" class="media-icon twitter" aria-label="Twitter"></a>
-                    <a href="https://instagram.com" class="media-icon instagram" aria-label="Instagram"></a>
-                    <a href="https://linkedin.com" class="media-icon linkedin" aria-label="LinkedIn"></a>
-                    <a href="https://youtube.com" class="media-icon youtube" aria-label="YouTube"></a>
-                </div>
-            </div>
+    <header class="container">
+        <h1 class="logo">company</h1>
+        <div class="social-icons">
+            <a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon-png-16.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-512/twitter-logo-1-225997.png" alt="Twitter"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://www.freepnglogos.com/uploads/linkedin-logo-icon-png-20.png" alt="LinkedIn"></a>
+            <a href="#"><img src="https://www.freepnglogos.com/uploads/youtube-play-button-logo-png-21.png" alt="YouTube"></a>
         </div>
+    </header>
+    <main class="content">
+        <div class="links">
+            <h3>Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+            <a href="#">Get Started</a>
+        </div>
+        <div class="services">
+            <h3>Services</h3>
+            <a href="#">App Design</a>
+            <a href="#">Web Design</a>
+            <a href="#">Logo Design</a>
+            <a href="#">Banner Design</a>
+        </div>
+        <div class="other-services">
+            <h3>Other services</h3>
+            <a href="#">SEO</a>
+            <a href="#">Content Marketing</a>
+            <a href="#">Prints</a>
+            <a href="#">Social Media</a>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>+91 8879887262</p>
+            <p>+91 8879887262</p>
+            <p>contact@company.com</p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2021 company.</p>
+        <a href="#">Privacy policy</a>
     </footer>
 </body>
 </html>
